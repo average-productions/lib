@@ -1,0 +1,43 @@
+:root {
+  // https://lukasckuehne.medium.com/we-created-an-accessible-range-of-ui-colors-8a1a51e4e8f6
+  /* Basic colors */
+  --white: #ffffff;
+  --black: #000000;
+
+  --green1000: #005c2e;
+  --green900: #006633;
+  --green: #007d3e;
+  --green700: #008744;
+  --green600: #009e4f;
+  --green100: #e6f2ec;
+  --green50: #f2f8f5;
+
+  --blue1000: #0047b0;
+  --blue900: #0053bf;
+  --blue: #0065cb;
+  --blue700: #0074e8;
+  --blue600: #0080ff;
+  --blue100: #e5eff9;
+  --blue50: #f2f7fc;
+
+  --red1000: #9e0012;
+  --red900: #b50015;
+  --red: #cc071e;
+  --red700: #ed001c;
+  --red600: #ff001e;
+  --red100: #f9e6e8;
+  --red50: #fcf2f4;
+
+  --black1000: #1c1c1c;
+  --black800: #676767;
+  --black700: #757575;
+  --black600: #949494;
+  --black300: #cccccc;
+  --black100: #f1f1f1;
+  --black50: #f8f8f8;
+
+  --color-button: var(--blue);
+  --color-button-hover: var(--blue600);
+  --color-button-shadow: var(--blue1000);
+  --color-button-ghost-hover: var(--blue50);
+}

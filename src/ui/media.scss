@@ -1,0 +1,87 @@
+$landscape: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+$desktop-mid: 1280px;
+$desktop-plus: 1440px;
+$wide: 1600px;
+$super: 2048px;
+
+@mixin landscape {
+  @media (min-width: #{$landscape}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin desktop-mid {
+  @media (min-width: #{$desktop-mid}) {
+    @content;
+  }
+}
+
+@mixin desktop-plus {
+  @media (min-width: #{$desktop-plus}) {
+    @content;
+  }
+}
+
+@mixin wide {
+  @media (min-width: #{$wide}) {
+    @content;
+  }
+}
+
+@mixin super {
+  @media (min-width: #{$super}) {
+    @content;
+  }
+}
+
+@mixin pointer {
+  @media (pointer: fine) {
+    @content;
+  }
+}
+
+@mixin orientation-landscape {
+  @media (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin orientation-portrait {
+  @media (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin spadding {
+  padding-left: 16px;
+  padding-right: 16px;
+
+  @include landscape {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@mixin smargin {
+  margin-left: 16px;
+  margin-right: 16px;
+
+  @include landscape {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
