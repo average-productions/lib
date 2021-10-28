@@ -3,7 +3,7 @@
 ```js
 import { Button } from "./Button";
 
-<Button onClick={() => console.log("fucker")}>Components</Button>;
+<Button onClick={() => console.log("onClick")}>Components</Button>;
 ```
 
 ### Small
@@ -11,7 +11,7 @@ import { Button } from "./Button";
 ```js
 import { Button } from "./Button";
 
-<Button small onClick={() => console.log("fucker")}>
+<Button small onClick={() => console.log("onClick")}>
   Components
 </Button>;
 ```
@@ -21,7 +21,7 @@ import { Button } from "./Button";
 ```js
 import { Button } from "./Button";
 
-<Button mini onClick={() => console.log("fucker")}>
+<Button mini onClick={() => console.log("onClick")}>
   Components
 </Button>;
 ```
@@ -31,7 +31,7 @@ import { Button } from "./Button";
 ```js
 import { Button } from "./Button";
 
-<Button ghost onClick={() => console.log("fucker")}>
+<Button ghost onClick={() => console.log("onClick")}>
   Components
 </Button>;
 ```
@@ -41,7 +41,7 @@ import { Button } from "./Button";
 ```js
 import { Button } from "./Button";
 
-<Button ghost small onClick={() => console.log("fucker")}>
+<Button ghost small onClick={() => console.log("onClick")}>
   Components
 </Button>;
 ```
@@ -51,7 +51,7 @@ import { Button } from "./Button";
 ```js
 import { Button } from "./Button";
 
-<Button ghost mini onClick={() => console.log("fucker")}>
+<Button ghost mini onClick={() => console.log("onClick")}>
   Components
 </Button>;
 ```
