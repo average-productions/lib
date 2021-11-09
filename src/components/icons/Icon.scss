@@ -1,0 +1,17 @@
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+a,
+.button {
+  .icon {
+    fill: var(--white);
+  }
+
+  &.ghost {
+    .icon {
+      fill: var(--color-button);
+    }
+  }
+}

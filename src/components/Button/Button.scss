@@ -8,7 +8,7 @@ $regular: 38px;
 $regular-tablet: 42px;
 
 .button {
-  color: white;
+  color: var(--white);
   font-family: var(--family);
   background-color: var(--color-button);
   font-size: 1.6rem;
@@ -17,11 +17,12 @@ $regular-tablet: 42px;
   padding: 0 1.6rem;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   white-space: nowrap;
   line-height: 1;
   height: $regular;
   border-radius: 5px;
-  box-shadow: 0 4px 16px -7px var(--color-button-shadow);
+  box-shadow: var(--box-shadow);
   cursor: pointer;
   transition: background-color 300ms ease, box-shadow 300ms ease;
 
@@ -32,9 +33,22 @@ $regular-tablet: 42px;
 
   &:hover,
   &:active,
-  &:focus {
+  &:focus,
+  &:focus-visible {
     background-color: var(--color-button-hover);
-    box-shadow: 0 4px 16px -7px transparent;
+    box-shadow: var(--box-shadow-hover);
+    outline: none;
+  }
+
+  &.action {
+    width: $regular;
+    border-radius: #{$regular / 2};
+    padding: 0;
+
+    @include tablet {
+      width: $regular-tablet;
+      border-radius: #{$regular-tablet / 2};
+    }
   }
 
   &.small {
@@ -62,13 +76,26 @@ $regular-tablet: 42px;
 
   &.ghost {
     background-color: transparent;
-    border: 2px solid var(--color-button);
-    color: var(--color-button);
+    border: 2px solid var(--color-button-ghost-border);
+    color: var(--color-button-ghost-text);
 
     &:hover,
     &:active,
     &:focus {
       background-color: var(--color-button-ghost-hover);
     }
+  }
+
+  &.block {
+    width: 100%;
+    display: flex;
+  }
+
+  .button + .button {
+    margin: 0 10px 0 0;
+  }
+
+  &.block + .button {
+    margin: 10px 0 0 0;
   }
 }

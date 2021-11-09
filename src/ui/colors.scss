@@ -17,6 +17,7 @@
   --blue: #0065cb;
   --blue700: #0074e8;
   --blue600: #0080ff;
+  --blue400: #5eaeff;
   --blue100: #e5eff9;
   --blue50: #f2f7fc;
 
@@ -38,6 +39,20 @@
 
   --color-button: var(--blue);
   --color-button-hover: var(--blue600);
-  --color-button-shadow: var(--blue1000);
-  --color-button-ghost-hover: var(--blue50);
+  --color-button-ghost-border: var(--blue);
+  --color-button-ghost-text: var(--color-button);
+  --color-button-ghost-hover: var(--blue100);
+  --box-shadow: 0 4px 16px -7px var(--blue400);
+  --box-shadow-hover: 0 4px 16px -7px transparent;
+  --color-bg: #f0f7f7;
+  --color-fg: var(--white);
+}
+
+.dark {
+  --color-bg: #252d46;
+  --color-fg: #364161;
+  --box-shadow: 0 4px 16px -7px var(--black1000);
+  --color-button-ghost-border: #b8dbff;
+  --color-button-ghost-text: #b8dbff;
+  --color-button-ghost-hover: #252d46;
 }

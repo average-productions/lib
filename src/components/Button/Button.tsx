@@ -9,6 +9,8 @@ interface ButtonProps {
   small?: boolean;
   mini?: boolean;
   ghost?: boolean;
+  block?: boolean;
+  action?: boolean;
 }
 
 export const Button: FC<ButtonProps> = ({
@@ -18,6 +20,8 @@ export const Button: FC<ButtonProps> = ({
   small,
   mini,
   ghost,
+  block,
+  action,
 }) => {
   const internalClick = useCallback(() => onClick(data), [onClick, data]);
 
@@ -27,6 +31,8 @@ export const Button: FC<ButtonProps> = ({
         small,
         mini,
         ghost,
+        block,
+        action,
       })}
       onClick={internalClick}
     >

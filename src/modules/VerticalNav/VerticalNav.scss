@@ -1,0 +1,13 @@
+@import "../../ui/media.scss";
+
+$nav-width: 280px;
+
+#vertical-nav {
+  position: fixed;
+  width: $nav-width;
+  padding: 40px 0;
+  height: 100vh;
+  background-color: var(--color-fg);
+  @include spadding;
+  z-index: 150;
+}

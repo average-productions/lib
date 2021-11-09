@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import reportWebVitals from "./reportWebVitals";
 import { RecoilRoot } from "recoil";
-import App from "./App";
+import { App } from "./App";
 import "./ui/reset.scss";
 import "./ui/typography.scss";
 import "./ui/colors.scss";
